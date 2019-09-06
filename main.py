@@ -24,7 +24,7 @@ if __name__ == "__main__":
             if len(messages) >= 1:
                 for message in messages:
                     # Process message
-                    if message.name != "Lyrics Bot" and message.text is not None:
+                    if message.text is not None:
                         lyricsBot.check_message(message.text)
 
                 # Get ID of most recent message
